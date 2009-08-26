@@ -1,0 +1,145 @@
+html
+	position: relative
+	z-index: 0
+
+body
+	position: relative
+	z-index: 1
+	margin: 0
+	padding: 0
+	color: #000
+	background-color: #fff
+	font-family: "Arial", "Helvetica", sans-serif
+	font-size: 12px
+
+=reset
+	margin: 0
+	padding: 0
+	color: inherit
+	background-color: transparent
+	background-repeat: no-repeat
+	font-family: inherit
+	font-size: 1em
+	font-weight: inherit
+	font-style: inherit
+	line-height: 1em
+	text-decoration: none
+	text-align: left
+	vertical-align: baseline
+	border: 0
+	outline: 0
+	&:focus
+		outline: 0
+
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, .x
+	+reset
+
+ul, ol, dd
+	margin: 0 0 0 20px
+	list-style-position: outside
+	ul
+		list-style-type: circle
+
+ol
+	list-style-type: decimal
+	list-style-position: outside
+	ol
+		list-style-type: lower-roman
+
+dt
+	font-weight: bold
+
+hr
+	display: block
+	height: 1px
+	background: #000
+	border: none
+
+code, pre, var
+	padding: 2px
+	font-family: "Palatino Linotype", "Courier New", monospace
+	color: #080
+	background-color: #eee
+	font-size: 12px
+
+del
+	color: #888
+	text-decoration: line-through
+
+abbr, acronym
+	text-transform: uppercase
+	border-bottom: 1px dashed #ddd
+	cursor: help
+
+strong
+	font-weight: bold
+
+em, cite
+	font-style: italic
+
+u, ins
+	text-decoration: underline
+
+s, strike
+	text-decoration: line-through
+
+sub
+	font-size: 11px
+	vertical-align: sub
+
+sup
+	font-size: 11px
+	vertical-align: super
+
+var, code, kbd
+	padding: 2px
+	font-family: monospace
+
+h1
+	font-size: 31px
+
+h2
+	font-size: 24px
+
+h3
+	font-size: 21px
+
+h4
+	font-size: 18px
+
+h5
+	font-size: 16px
+
+h6
+	font-size: 14px
+
+a
+	color: #02f
+	text-decoration: underline
+	&:hover
+		color: #222
+	&:active
+		color: #c33
+
+blockquote
+	cite
+		display: block
+
+table
+	width: 100%
+	border-collapse: separate
+	border-spacing: 0
+	th, td
+		vertical-align: top
+	thead, th, caption
+		font-weight: bold
+
+img
+	-ms-interpolation-mode: bicubic

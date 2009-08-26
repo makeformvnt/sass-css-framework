@@ -1,0 +1,52 @@
+input, select, textarea
+	width: 180px
+	margin: 1px 0
+	padding: 2px
+	border: 1px solid #aaa
+
+textarea
+	height: 100px
+
+select
+	cursor: pointer
+
+!opacity= 5
+button
+	margin: 0 0 1px
+	padding: 0 5px
+	font-weight: bold
+	cursor: pointer
+	line-height: 17px
+	.reset
+		opacity= !opacity/10
+		-moz-opacity= !opacity/10
+		-khtml-opacity= !opacity/10
+		filter= "alpha(opacity="+!opacity*10+")"
+		-ms-filter= "alpha(opacity="+!opacity*10+")"
+	*+html &
+		padding-left: 2px
+		padding-right: 2px
+form
+	.control
+		+clearfix
+		margin: 0 0 5px
+		p
+			margin: 0 0 0 130px
+			padding: 2px
+			font-size: 9px
+	.indent, .checkbox
+		margin: 0 0 0 130px
+	label, .label
+		float: left
+		width: 120px
+		padding: 6px
+	.text input
+		padding: 3px
+	.checkbox input, .radio input
+		float: left
+		width: auto
+		margin: 5px 0
+		cursor: pointer
+	.checkbox label, .radio label
+		width: 85%
+		line-height: 1.2em

@@ -1,0 +1,280 @@
+html {
+  position: relative;
+  z-index: 0; }
+
+body {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-color: #fff;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px; }
+
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, .x {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: 1em;
+  text-decoration: none;
+  text-align: left;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0; }
+  div:focus, span:focus, applet:focus, object:focus, iframe:focus,
+  h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus, p:focus, blockquote:focus, pre:focus,
+  a:focus, abbr:focus, acronym:focus, address:focus, big:focus, cite:focus, code:focus,
+  del:focus, dfn:focus, em:focus, font:focus, img:focus, ins:focus, kbd:focus, q:focus, s:focus, samp:focus,
+  small:focus, strike:focus, strong:focus, sub:focus, sup:focus, tt:focus, var:focus,
+  dl:focus, dt:focus, dd:focus, ol:focus, ul:focus, li:focus,
+  fieldset:focus, form:focus, label:focus, legend:focus,
+  table:focus, caption:focus, tbody:focus, tfoot:focus, thead:focus, tr:focus, th:focus, td:focus, .x:focus {
+    outline: 0; }
+
+ul, ol, dd {
+  margin: 0 0 0 20px;
+  list-style-position: outside; }
+  ul ul, ol ul, dd ul {
+    list-style-type: circle; }
+
+ol {
+  list-style-type: decimal;
+  list-style-position: outside; }
+  ol ol {
+    list-style-type: lower-roman; }
+
+dt {
+  font-weight: bold; }
+
+hr {
+  display: block;
+  height: 1px;
+  background: #000;
+  border: none; }
+
+code, pre, var {
+  padding: 2px;
+  font-family: "Palatino Linotype", "Courier New", monospace;
+  color: #080;
+  background-color: #eee;
+  font-size: 12px; }
+
+del {
+  color: #888;
+  text-decoration: line-through; }
+
+abbr, acronym {
+  text-transform: uppercase;
+  border-bottom: 1px dashed #ddd;
+  cursor: help; }
+
+strong {
+  font-weight: bold; }
+
+em, cite {
+  font-style: italic; }
+
+u, ins {
+  text-decoration: underline; }
+
+s, strike {
+  text-decoration: line-through; }
+
+sub {
+  font-size: 11px;
+  vertical-align: sub; }
+
+sup {
+  font-size: 11px;
+  vertical-align: super; }
+
+var, code, kbd {
+  padding: 2px;
+  font-family: monospace; }
+
+h1 {
+  font-size: 31px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 21px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 16px; }
+
+h6 {
+  font-size: 14px; }
+
+a {
+  color: #02f;
+  text-decoration: underline; }
+  a:hover {
+    color: #222; }
+  a:active {
+    color: #c33; }
+
+blockquote cite {
+  display: block; }
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0; }
+  table th, table td {
+    vertical-align: top; }
+  table thead, table th, table caption {
+    font-weight: bold; }
+
+img {
+  -ms-interpolation-mode: bicubic; }
+
+body {
+  text-align: center; }
+
+.left #container {
+  margin-left: 0; }
+
+.right #container {
+  margin-right: 0; }
+
+#container, #header, #content-wrapper, #footer {
+  _display: inline;
+  clear: both;
+  margin: 0 auto; }
+  #container:after, #header:after, #content-wrapper:after, #footer:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  *+html #container, *+html #header, *+html #content-wrapper, *+html #footer {
+    height: auto;
+    zoom: 1; }
+
+#aside {
+  _display: inline; }
+  #aside:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  *+html #aside {
+    height: auto;
+    zoom: 1; }
+
+input, select, textarea {
+  width: 180px;
+  margin: 1px 0;
+  padding: 2px;
+  border: 1px solid #aaa; }
+
+textarea {
+  height: 100px; }
+
+select {
+  cursor: pointer; }
+
+button {
+  margin: 0 0 1px;
+  padding: 0 5px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 17px; }
+  button .reset {
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    filter: alpha(opacity=50);
+    -ms-filter: alpha(opacity=50); }
+  *+html button {
+    padding-left: 2px;
+    padding-right: 2px; }
+
+form .control {
+  _display: inline;
+  margin: 0 0 5px; }
+  form .control:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  *+html form .control {
+    height: auto;
+    zoom: 1; }
+  form .control p {
+    margin: 0 0 0 130px;
+    padding: 2px;
+    font-size: 9px; }
+form .indent, form .checkbox {
+  margin: 0 0 0 130px; }
+form label, form .label {
+  float: left;
+  width: 120px;
+  padding: 6px; }
+form .text input {
+  padding: 3px; }
+form .checkbox input, form .radio input {
+  float: left;
+  width: auto;
+  margin: 5px 0;
+  cursor: pointer; }
+form .checkbox label, form .radio label {
+  width: 85%;
+  line-height: 1.2em; }
+
+#container {
+  width: 900px; }
+  #container #content {
+    float: right;
+    width: 600px; }
+  #container #aside {
+    float: left;
+    width: 300px; }
+
+#nav-main {
+  _display: inline;
+  margin: 0;
+  list-style: none; }
+  #nav-main:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  *+html #nav-main {
+    height: auto;
+    zoom: 1; }
+  #nav-main a {
+    float: left; }
+  #nav-main li {
+    display: block;
+    margin: 0; }
+  #nav-main li {
+    float: left; }
+
+@media print {
+  body {
+    font-size: 12pt; } }

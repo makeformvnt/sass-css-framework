@@ -1,0 +1,21 @@
+=clearfix
+	_display: inline
+	&:after
+		content: "."
+		display: block
+		height: 0
+		clear: both
+		visibility: hidden
+	*+html &
+		height: auto
+		zoom: 1
+
+=figure
+	position: relative
+	z-index: 2
+	float: inherit
+	display: block
+	text-align: center
+	*
+		float: inherit
+		display: block

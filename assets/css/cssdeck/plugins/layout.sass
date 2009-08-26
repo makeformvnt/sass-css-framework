@@ -1,0 +1,50 @@
+body
+	text-align: center
+
+.left
+	#container
+		margin-left: 0
+.right
+	#container
+		margin-right: 0
+
+#container, #header, #content-wrapper, #footer
+	+clearfix
+	clear: both
+	margin: 0 auto
+
+#aside
+	+clearfix
+
+=layout(!columns= 2, !side= "left", !container= 900px, !content= 600px, !aside_left= 300px, !aside_right= 150px)
+	width= !container
+	@if !columns == 2
+		#content
+			float: right
+			width= !content
+		#aside
+			float= !side
+			width= !aside_left
+		@if !side == "right"
+			#content
+				float: left
+	@if !columns == 3
+		#content
+			float: left
+			width= !content
+			margin-left= !aside_left
+		#aside-left
+			float: left
+			width= !aside_left
+			margin-left= -(!aside_left + !content)
+		#aside-right
+			float: right
+			width= !aside_right
+
+=sections(!num= 2)
+	+clearfix
+	.section
+		+clearfix
+		float: left
+	div
+		width= 100/!num+"%"
